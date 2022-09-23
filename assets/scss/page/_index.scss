@@ -1,0 +1,586 @@
+.sc-visual {
+    position: relative;
+    .swiper {
+        height: 623px;
+        .swiper-pagination-bullet {
+            margin: 0;
+            //margin:0 이 적용이 안되었어서 점수를 높이기 위해 .swiper 선택자를 한 번 더 써줌
+            width: 20px;
+            height: 2px;
+            background: #fff;
+            border-radius: 0;
+        }
+    }
+    .swiper-wrapper {}
+    .swiper-slide {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: inherit;
+        position: relative;
+        a {
+            display: block;
+            width: 100%;
+            padding-left: 0;
+            padding: 0;
+            height: inherit;
+        }
+        .txt {
+            position: absolute;
+            bottom: 13vh;
+            left: 5vw;
+            display: inline-block;
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+        }
+        .title {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 1.25;
+            letter-spacing: -1.3px;
+            color: #fff;
+        }
+        .sub {
+            font-weight: 400;
+            padding-top: 15px;
+            font-size: 17px;
+            line-height: 1.4;
+            letter-spacing: -0.5px;
+            color: #fff;
+        }
+        img {
+            height: 623px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+//BEST &  이달의 신상 prd-layout1 
+.prd-layout1 {
+    .prd-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .prd-item {
+        width:calc((100%  - 2.22%) / 2);
+        padding-bottom: 50px;
+        a {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .img {
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            .new-badge {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 20%;
+                min-width: 40px;
+            }
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .info {
+            padding: 15px 5% 0;
+            .review {
+                font-size: 13px;
+                line-height: 13px;
+                font-weight: 600;
+                color: #8e1f29;
+                font-family: 'Gilroy-Bold';
+            }
+            .name {
+                padding: 10px 0;
+                font-size: 13px;
+                font-weight: 400;
+                letter-spacing: -0.05em;
+                font-family: 'Gilroy-Medium';
+            }
+            .price {
+                color: #8E1F29;
+                font-weight: 500;
+                margin-right: 5px;
+                vertical-align: top;
+            }
+            .sale {
+                font-family: 'Gilroy-Bold';
+            }
+            .sale-price {
+                color: #333 ;
+                padding: 0;
+                font-size: 15px;
+                line-height: 16px;
+                font-family: 'Gilroy-Bold';
+                letter-spacing: -0.03em;
+                vertical-align: top;
+            }
+            .sell-price {
+                font-size: 13px;
+                line-height: 18px;
+                font-family: 'Gilroy-Medium';
+                color: #8d8d8d ;
+                margin-left: 5px;
+                text-decoration: line-through;
+            }
+            .color {
+                font-size: 13px;
+                line-height: 11px;
+                letter-spacing: -0.05em;
+                color: #999;
+                font-family: 'Gilroy-Medium';
+                padding-top: 9px;
+            }
+            .color-opt {
+                margin-left: 2px;
+            }
+        }
+    }
+
+
+
+
+    .btn-wrap {
+        padding: 0 38px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        margin-bottom: 65px;
+        .link-more {
+            display: block;
+            width: 100%;
+            height: 52px;
+            line-height: 52px;
+            border: 1px solid #e0e0e0;
+            box-sizing: border-box;
+            background: #fff;
+            font-size: 15px;
+            color: #222;
+            font-weight: 500;
+            text-align: center;
+        }
+        .go-cate {
+            display: inline-block;
+            vertical-align: text-bottom;
+            padding-left: 5px;
+            width: 19px;
+            height: 19px;
+            background: url(../images/go-cate.png) no-repeat;
+            background-size: 19px auto;
+            background-position: center;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+.event-banner {
+    width: 100%;
+    margin: -20px auto 20px;
+    text-align: center;
+    a {
+        display: block;
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+.sc-lookBook {
+    .group-content {
+        padding-top: 40px;
+    }
+    .intro-area {
+        a {
+            img {
+                width: 100%;
+            }
+        }
+        .txt-box {
+            padding: 20px 16px 20px;
+            box-sizing: border-box;
+        }
+        .title {
+            font-size: 26px;
+            line-height: 35px;
+            color: #333;
+            letter-spacing: -0.05em;
+            font-weight: 700;
+        }
+        .desc {
+            padding: 14px 0 28px;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: -0.05em;
+            color: #333;
+            font-weight: 400;
+        }
+        .link-more {
+            display: inline-block;
+            background-color: #1e1e1e;
+            border-radius: 2px;
+            border: 1px solid #1e1e1e;
+            box-sizing: border-box;
+            color: #fff;
+            padding: 8px 47px 8px 18px;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.03em;
+            font-weight: 500;
+            background-image: url(../images/gop-more.png);
+            background-repeat: no-repeat;
+            background-size: 15px auto;
+            background-position: calc(100% - 18px) center;
+        }
+    }
+
+
+
+    .prd-layout2 {
+        padding: 0 16px;
+        box-sizing: border-box;
+        .prd-list {}
+        .prd-item {
+            position: relative;
+            padding: 20px 0;
+            width: 100%;
+            display: block;
+            &::after {
+                content: "";
+                width: 100%;
+                height: 1px;
+                background: #eee;
+                display: block;
+                position: absolute;
+                bottom: 0;
+            }
+            &::after:last-child {
+                display: none;
+            }
+            a {
+                display: flex;
+            }
+            .img {
+                max-width: 110px;
+                margin: 0;
+                img {
+                    width: 100%;
+                }
+            }
+            .info {
+                padding: 0 28px;
+                width: calc(100% - 88px);
+            }
+            .review {
+                font-size: 13px;
+                line-height: 13px;
+                font-weight: 600;
+                color: #8e1f29;
+                font-family: 'Gilroy-Bold';
+            }
+            .name {
+                padding: 10px 0;
+                font-size: 13px;
+                font-weight: 400;
+                letter-spacing: -0.05em;
+                font-family: 'Gilroy-Medium';
+            }
+            .price {
+                color: #8E1F29;
+                font-weight: 500;
+                margin-right: 5px;
+                vertical-align: top;
+                .sale {
+                    font-family: 'Gilroy-Bold';
+                }
+                .sale-price {
+                    color: #333 ;
+                    padding: 0;
+                    font-size: 15px;
+                    line-height: 16px;
+                    font-family: 'Gilroy-Bold';
+                    letter-spacing: -0.03em;
+                    vertical-align: top;
+                }
+                .sell-price {
+                    font-size: 13px;
+                    line-height: 18px;
+                    font-family: 'Gilroy-Medium';
+                    color: #8d8d8d ;
+                    margin-left: 5px;
+                    text-decoration: line-through;
+                }
+            }
+            .color {
+                padding-top: 9px;
+                font-family: 'Gilroy-Medium';
+                span {
+                    font-size: 13px;
+                    line-height: 11px;
+                    letter-spacing: -0.05em;
+                    color: #999;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.story-banner {
+    display: block;
+    position: relative;
+    padding: 20px 0;
+    .banner-wrap {
+        display: block;
+        padding: 56px 20px;
+        background-color: #C86733;
+        span {
+            display: block;
+        }
+        .brand {
+            color: #fff;
+            font-size: 18px;
+            letter-spacing: -0.5px;
+            margin: 0 auto 10px;
+            font-weight: 400;
+            display: inline-block;
+            border-bottom: 1.5px solid #fff;
+            padding: 0;
+            padding-bottom: 5px;
+            line-height: 1.2;
+        }
+        .story {
+            font-size: 30px;
+            line-height: 36px;
+            letter-spacing: -0.03em;
+            color: #fff;
+            font-weight: 700;
+        }
+        .prize {
+            padding: 10px 0 5px;
+            font-size: 12px;
+            line-height: 1.4;
+            color: #fff;
+            letter-spacing: -0.02em;
+            font-weight: 400;
+        }
+        .more-btn {
+            display:inline-block;
+            width: 100px;
+            margin-top: 20px;
+            padding: 10px 0;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: -0.03em;
+            font-weight: 500;
+            color: #fff;
+            text-align: center;
+            box-sizing: border-box;
+            border: 1px solid #fff;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+.sc-category {
+    padding-left: 20px;
+    h2 {
+        padding-left: 0;
+    }
+    .group-content {
+        position: relative;
+        .swiper {}
+        .siwper-wrapper {}
+        .swiper-slide {
+            .img {}
+            img {}
+            .info {
+                padding: 15px 5% 0;
+            }
+            .review {
+                font-size: 13px;
+                line-height: 13px;
+                font-weight: 600;
+                color: #8e1f29;
+                font-family: 'Gilroy-Bold';
+            }
+            .name {
+                padding: 10px 0;
+                font-size: 13px;
+                font-weight: 400;
+                letter-spacing: -0.05em;
+                font-family: 'Gilroy-Medium';
+            }
+            .price {
+                color: #8E1F29;
+                font-weight: 500;
+                margin-right: 5px;
+                vertical-align: top;
+                .sale {
+                    font-family: 'Gilroy-Bold';
+                }
+                .sale-price {
+                    color: #333 ;
+                    padding: 0;
+                    font-size: 15px;
+                    line-height: 16px;
+                    font-family: 'Gilroy-Bold';
+                    letter-spacing: -0.03em;
+                    vertical-align: top;
+                }
+                .sell-price {
+                    font-size: 13px;
+                    line-height: 18px;
+                    font-family: 'Gilroy-Medium';
+                    color: #8d8d8d ;
+                    margin-left: 5px;
+                    text-decoration: line-through;
+                }
+            }
+            .color {
+                font-size: 13px;
+                line-height: 11px;
+                letter-spacing: -0.05em;
+                color: #999;
+                font-family: 'Gilroy-Medium';
+                padding-top: 9px;
+                span {}
+                &:last-child {
+                    margin-left: 2px;
+                }
+            }
+        }
+        .more-btn {
+            position: absolute;
+            display: inline-block;
+            top: 50px;
+            right: 5%;
+            padding: 0 5px;
+            a {
+                display: block;
+                font-size: 14px;
+                line-height: 1.5;
+            }
+            span {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 14px;
+                line-height: 1.5;
+                color: #000;
+            }
+            .more-btn-img {
+                width: 15px;
+                height: 11px;
+                margin-left: 3px;
+                margin-bottom: 2px;
+                background-image: url(../images/group-flex2-btn.png);
+                background-repeat: no-repeat;
+                background-size: 15px auto;
+                background-position: center;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+.sc-info {
+    margin-top: 70px;
+    &.membership {
+        padding: 65px 20px;
+        box-sizing: border-box;
+        background: url(../images/membership.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    a {
+        display: block;
+
+    }
+    &.offline {
+        padding: 80px 20px 74px;
+        box-sizing: border-box;
+        background: url(../images/shop.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 10px auto 0;
+    }
+    .title {
+        font-size: 26px;
+        line-height: 31px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        color: #fff;
+    }
+    .desc {
+        font-size: 15px;
+        line-height: 1.4;
+        font-weight: 400;
+        letter-spacing: -0.02em;
+        color: #fff;
+        padding: 15px 0 30px;
+        box-sizing: border-box;
+    }
+    span {
+        border: 1px solid #fff;
+        padding: 7px 25px 8px;
+        color: #fff;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: -0.03em;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+}

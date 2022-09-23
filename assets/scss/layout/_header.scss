@@ -1,0 +1,468 @@
+.header {}
+.header {
+    .swiper {}
+    .swiper-wrapper {}
+    .swiper-slide {
+        a {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            background: #030303;
+            color: #fff;
+            text-align: center;
+        }
+        span {}
+        .title {
+            font-weight: 700;
+        }
+        .arrow {
+            display: inline-block;
+            vertical-align: middle;
+            width: 24px;
+            height: 16px;
+            margin-bottom: 4px;
+            background-image: url(../images/arrow.png);
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: center;
+        }
+        .kakao-ico {
+            display: inline-block;
+            vertical-align: middle;
+            width: 17px;
+            height: 18px;
+            line-height: 20px;
+            margin-left: 7px;
+            margin-bottom: 2px;
+            background-image: url(../images/kakao-ico.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    }/*//header 최상단 swiper*/
+
+
+
+
+
+
+
+
+
+    .gnb {
+        position: fixed;
+        left: 0;
+        top: 35px;
+        z-index: 10;
+        width: 100%;
+        background: transparent;
+        &.active {
+            display: block;
+            background: #fff;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 20;
+            width: 100%;
+        }
+    }
+    .gnb-top {
+        position: relative;
+        height: 56px;
+        .logo {
+            a {
+                padding: 14px 0 19px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-image: url(../images/main-logo.svg);
+                display: block;
+                width: 87px;
+                margin: 0 auto;
+                background-size: 87px auto;
+                background-repeat: no-repeat;
+            }
+        }
+        .btn-menu, .btn-search, .btn-cart, .btn-myPage {
+            position: absolute;
+            top: 0;
+            z-index: 10;
+            width: auto;
+            height: auto;
+            display: block;
+            height: 56px;
+            padding: 0 10px;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+        }
+        .btn-menu {
+            width: 22px;
+            background-image: url(../images/menu-btn.svg);
+        }
+        .btn-search {
+            left: 44px;
+            right: auto;
+            width: 17px;
+            background-image: url(../images/search-btn.svg);
+        }
+        .btn-cart {
+            right: 43px;
+            width: 19px;
+            background-image: url(../images/myshop-btn.svg);
+        }
+        .btn-myPage {
+            right: 5px; 
+            width: 18px;
+            background-image: url(../images/mypage-btn.svg);
+        }/*//.gnb의 원래 모습*/
+    }
+    
+
+
+
+
+
+
+
+    .gnb-bottom {
+        display: none;
+        .bottom-menu {}
+        .menu-list {
+            display: flex;
+            position: relative;
+            ul {
+                padding: 11px 0 11px 15px;
+                display: flex;
+            }
+            li {
+                font-size: 16px;
+                margin-right: 15px;
+                line-height: 23px;
+                letter-spacing: -0.05em;
+                color: #333;
+                font-weight: 500;
+                vertical-align: middle;
+                a {}
+            }
+            li:last-child {
+                margin-right: 0;
+            }
+            .btn-menu-all {
+                display: inline-block;
+                width: 28px;
+                height: 28px;
+                background-image: url(../images/down-arrow.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                position: absolute;
+                right: 10px;
+                top: auto;
+                bottom: 11px;
+                &.active {
+                    transform: rotate(180deg);
+                    z-index: 10;
+                }
+            }
+            .text {
+                display: none;
+                font-size: 16px;
+                line-height: 23px;
+                color: #000;
+                width: 100%;
+                padding: 11px 16px;
+                box-sizing: border-box;
+                position: relative;
+                background: #fff;
+            }
+        }/*//.스크롤을 하면 바뀌는 gnb 모양*/
+        .menu-list-all {
+            display: none;
+            position: relative;
+            padding: 6px 12px;
+            box-sizing: border-box;
+            background: #F6F6F6;
+            border-top: 1px solid #dcdcdc;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            li {
+                display: inline-block;
+                padding: 8px 17px;
+                margin: 3px 3px;
+                border: 1px solid #ebebeb;
+                border-radius: 100px;
+                box-sizing: border-box;
+                background: #fff;
+                font-size: 14px;
+                line-height: 20px;
+                color: #000;
+                letter-spacing: -0.05em;
+                a {
+                    display: block;
+                }
+            }
+        }/*//.바뀐 gnb의 버튼을 누를 때 나오는 하위 메뉴들*/
+    }
+
+
+
+
+
+
+
+
+    .side-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 10000;
+        padding: 0 16px;
+        width: 81.94%;
+        height: 100%;
+        background-color: #fff;
+        transition: left 0.5s;
+        overflow-y: auto;
+        //넘치는 내용을 보이기 위해 스크롤을 만듬
+        &.active {
+            left: 0;
+        }
+        .member-area {
+            padding: 0 16px;
+            box-sizing: border-box;
+            margin-left: -16px;
+            border-bottom: 1px solid #ddd;
+        }
+        .member-btns {
+            padding: 32px 0 30px;
+            position: relative;
+            .link-btn {
+                display: inline-block;
+                width: auto;
+                height: auto;
+                padding: 10px 26px;
+                font-size: 13px;
+                line-height: 15px;
+                border-radius: 2px;
+            }
+            .link-login {
+                background: #0e0e0e;
+                color: #fff;
+                font-weight: 700;
+                border: 1px solid #222;
+                white-space: nowrap;
+                cursor: pointer;
+            }
+            .link-join {
+                background: #fff;
+                border: 1px solid #ccc;
+                color: #333;
+                font-weight: 500;
+                margin-left: 6px;
+            }
+            p {
+                color: #777;
+                padding-top: 15px;
+                font-size: 13px;
+                strong {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .category {
+            padding: 18px 0 11px;
+            .category-area {
+                border-bottom: 1px solid #ddd;
+            }
+            .board-area {
+                padding: 18px 0 11px;
+                border-bottom: 1px solid #ddd;
+            }
+
+
+
+
+
+            .cate-item, .board-item {
+                position: relative;
+            }
+            .cate-name {
+                position: relative;
+                display: block;
+                padding: 15px 0;
+                color: #333;
+                font-size: 16px;
+                line-height: 16px;
+                font-weight: 500;
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 10px;
+                    right: 0;
+                    width: 30px;
+                    height: 28px;
+                    background: url(../images/sub-down-arrow.png) no-repeat center/28px auto;
+                    transition-duration: .3s;
+                    }
+                &.active {
+                    &::after {
+                        transform: rotate(180deg);
+                    }
+                    }
+                &.noList::after {
+                    display: none;
+                }
+                }
+            }
+            .sub-btn {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 0;
+                width: 30px;
+                height: 28px;
+                background: url(../images/sub-down-arrow.png) no-repeat center/28px auto;
+                transition-duration: .3s;
+                &.active {
+                    transform: rotate(180deg);
+                }
+            }
+            .category-sub {
+                display: none;
+                height: auto;
+                padding-bottom: 15px;
+                a {
+                    display: block;
+                    padding: 11px 0;
+                    color: #848484;
+                    font-size: 15px;
+                    line-height: 15px;
+                    letter-spacing: -0.5px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+
+
+        .side-menu-close {
+            position: absolute;
+            display: block;
+            right: 16px;
+            top: 38px;
+            width: 24px;
+            height: 24px;
+            background: url(../images/sub-close-btn.png) no-repeat;
+            background-size: 100% auto;
+        }
+}
+.header {
+    .category {
+        .event-area {
+            .event-title {
+                font-size: 17px;
+                line-height: 21px;
+                letter-spacing: -0.02em;
+                color: #333;
+                font-weight: 500;
+                padding: 20px 0 16px;
+                display: block;
+            }
+            .event-box {
+                display: block;
+                margin: 0 0 30px;
+                width: 100%;
+                .img-box {
+                    img {
+                        display: block;
+                        width: 100%;
+                        object-fit: cover;
+                        border-radius: 3px;
+                    }
+                }
+                .img-title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 12px 0 6px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 18px;
+                    letter-spacing: -0.02em;
+                    color: #222;
+                    .more-link {
+                        font-size: 12px;
+                        line-height: 16px;
+                        letter-spacing: -0.02em;
+                        font-weight: 500;
+                        color: #777;
+                    }
+                }
+                .img-desc {
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: -0.02em;
+                    font-weight: 400;
+                    color: #777;
+                }
+            }
+        }
+
+        .links-area {
+            .links-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 2px;
+                overflow: hidden;
+            
+                a {
+                    position: relative;
+                    text-align: center;
+                    display: block;
+                    width: 50%;
+                    background: #F2F2F2;
+                    padding: 14px 0;
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: -0.02em;
+                    font-weight: 400;
+                    color: #777;
+                    &:first-child:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translate(0,-50%);
+                        width: 1px;
+                        height: 16px;
+                        background: #CCC;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+header .gnb.active .gnb-top .logo a {
+    background-image: url(../images/main-logo-active.svg);
+}
+header .gnb.active .gnb-top .btn-menu {
+    background-image: url(../images/menu-btn-2.svg);
+}
+header .gnb.active .gnb-top .btn-search {
+    background-image: url(../images/search-btn-2.svg);
+}
+header .gnb.active .gnb-top .btn-cart {
+    background-image: url(../images/myshop-btn-2.svg);
+}
+header .gnb.active .gnb-top .btn-myPage {
+    background-image: url(../images/mypage-btn-2.svg);
+}
+/*//scroll 했을 때 gnb.active 들어간 상태 .gnb-top 아이콘 색상 변경*/
